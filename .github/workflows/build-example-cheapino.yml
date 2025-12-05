@@ -1,0 +1,11 @@
+name: 'Build Example cheapino'
+on:
+  - workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    with:
+      keyboard: '["cheapino"]'
+      alphas: '["qwerty"]'
+      nav: '["vi"]'
+      clipboard: '["mac"]'
